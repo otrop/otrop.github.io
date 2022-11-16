@@ -50,3 +50,20 @@ body{
     border-bottom: 2px solid #333;
     padding-bottom: 1px;
 }
+
+.header .container{
+    padding-top: 5px;
+}
+
+.header .welcome_area {
+    text-align: center;
+    padding: auto;
+}
+
+.header .welcome_area h1{
+    font-size: 50px;
+}
+
+.header .welcome_area h2{
+    font-size: 40px;
+}
