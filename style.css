@@ -67,7 +67,7 @@ body{
 
 .header .container_info{
     width: 60%;
-    padding-top: 60px;
+    padding-top: 50px;
     padding-left: 15px;
     float: left;
 }
@@ -91,4 +91,8 @@ body{
     font-size: 20px;
     line-height: 30px;
     font-weight: semi-bold;
+}
+
+.header .container_contact {
+    background-color: #333;
 }
