@@ -50,18 +50,10 @@ body{
     border-bottom: 2px solid #333;
     padding-bottom: 1px;
 }
-
 .header .container_image{
     width: 20%;
     padding-top: 55px;
     padding-left: 180px;
-    float: left;
-}
-
-.header .image_area img{
-    width: 241px;
-    height: 281px;
-    border-radius: 15px;
     float: left;
 }
 
@@ -70,6 +62,12 @@ body{
     padding-top: 50px;
     padding-left: 15px;
     float: left;
+}
+
+.header .image_area img{
+    width: 241px;
+    height: 281px;
+    border-radius: 10px;
 }
 
 .header .welcome_area {
@@ -93,6 +91,23 @@ body{
     font-weight: semi-bold;
 }
 
-.header .container_contact {
-    background-color: #333;
+.contact .contact_area {
+    width: 241px;
+    height: fit-content;
+    clear: both;
+    margin-left: 180px;
+    padding-top: 1px;
+}
+
+.contact .contact_area p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.contact .container_github{
+    margin-left: 35%;
+    float: left;
+}
+.contact .container_linkin{
+    float: left;
 }
