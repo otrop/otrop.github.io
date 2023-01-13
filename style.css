@@ -1,8 +1,12 @@
 body{
+    background: #003F6D;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+h1{color: #f1f1f1;}
+p{color: #f1f1f1;}
 
 footer{
     position: absolute;
@@ -29,6 +33,7 @@ footer{
 }
 
 .navbar h1 {
+    color: #000;
     margin: 0;
     font-size: 24px;
     font-weight: normal;
@@ -59,27 +64,34 @@ footer{
     padding-bottom: 1px;
 }
 .header .container_image{
-    width: 20%;
+    padding-left: 42%;
     padding-top: 55px;
-    padding-left: 180px;
-    float: left;
 }
 
-.header .container_info{
-    width: 60%;
-    padding-top: 50px;
-    padding-left: 15px;
-    float: left;
-}
 
+.header .image_bg{
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    background: #6F4646;
+}
 .header .image_area img{
+    padding-top: 10px;
+    padding-right: 25px;
     width: 241px;
     height: 281px;
     border-radius: 10px;
+    /* make a fade in pic footer*/
+    
+
+}
+
+.header .container_info{
 }
 
 .header .welcome_area {
-    text-align: left;
+    padding-top: -20px;
+    text-align: center;
 }
 
 .header .welcome_area h1{
@@ -93,6 +105,7 @@ footer{
 }
 
 .header .info_text p {
+    text-align: center;
     margin: 0;
     font-size: 20px;
     line-height: 30px;
@@ -100,10 +113,8 @@ footer{
 }
 
 .contact .contact_area {
-    width: 241px;
     height: fit-content;
     clear: both;
-    margin-left: 180px;
     padding-top: 1px;
 }
 
@@ -112,8 +123,12 @@ footer{
     margin-bottom: 5px;
 }
 
+.contact .container_mail{
+    margin-left: 45%;
+    float: left;
+}
+
 .contact .container_github{
-    margin-left: 35%;
     float: left;
 }
 .contact .container_linkin{
