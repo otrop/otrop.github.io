@@ -22,39 +22,33 @@ footer{
 }
 
 .navbar{
-    width: 100%;
-    height: 50px;
+    display: flex;
+    justify-content: space-between;
     background: #fff;
     box-shadow: 0 0 5px #666;
 }
 
 .navbar .name{
-    float: left;
-    padding: 0 0 0 10px;
+    margin: 1rem;
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
 }
 
-.navbar h1 {
-    color: #000;
+.navbar-links ul{
     margin: 0;
-    font-size: 24px;
-    font-weight: normal;
-    padding-top: 12px;
+    padding: 0;
+    display: flex;
 }
-
-.navbar ul.menu{
+.navbar-links li{
     list-style: none;
-    float: right;
 }
 
-.navbar ul.menu li {
-    float: left;
-    margin-right: 20px;
-
-}
-
-.navbar ul.menu li a {
+.navbar-links li a {
     text-decoration: none;
     color: #333;
+    padding: 1rem;
+    display: block;
     border-bottom: 2px solid transparent;
     padding-bottom: 20px;
     transition: all 0.3s ease;
@@ -79,13 +73,34 @@ footer{
 .toggle-button .bar{
     height: 3px;
     width: 100%;
-    background-color: white;
+    background-color: #000;
     border-radius: 10px;
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
+    .header .container_info .welcome_area {
+        color: #f1f1f1;
+        font-size: 2.25rem;
+        margin: 0;
+    }
+
+    .header .container_info .info_text p {
+        color: #f1f1f1;
+        font-size: 1.15rem;
+        margin: 0;
+    }
+
     .toggle-button {
         display: flex;
+    }
+
+    .navbar .name{
+        font-size: 1.25rem;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
     }
 
     .navbar {
@@ -93,23 +108,19 @@ footer{
         align-items: flex-start;
     }
 
-    .navbar ul.menu {
-        display: none;
+    .navbar-links ul {
         width: 100%;
         flex-direction: column;
     }
 
-    .navbar ul.menu li {
+    .navbar-links li {
         text-align: center;
     }
 
-    .navbar ul.menu li a {
-        padding: .5rem 1rem;
-    }
-    
-    .navbar ul.menu.active{
+    .navbar-links.active{
         display: flex;
     }
+
 }
 
 .header .container_image{
@@ -118,7 +129,6 @@ footer{
     grid-template-areas: "sidebar_left image_profile sidebar_right";
     margin: 55px 0 0 0;
 }
-
 
 .header .image_bg{
     grid-area: image_profile;
@@ -130,6 +140,7 @@ footer{
     margin: 0 auto 0 auto;
     background: #6F4646;
 }
+
 .header .image_area img{
     padding-top: 10px;
     padding-right: 25px;
@@ -140,19 +151,15 @@ footer{
 
 }
 
-
 .header .welcome_area {
     padding-top: -20px;
     text-align: center;
 }
 
-.header .welcome_area h1{
+.header .welcome_area {
+    color: #f1f1f1;
     font-size: 55px;
-    margin: 0;
-}
-
-.header .welcome_area h2{
-    font-size: 45px;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -172,15 +179,12 @@ footer{
     margin: 0 auto 0 auto;
 }
 .contact .contact_area {
-    width: auto;
+    display: flex;
+    align-content: center;
+    width: fit-content;
     margin: 0 auto 0 auto;
     clear: both;
     padding-top: 1px;
-}
-
-.contact .contact_area p {
-    text-align: center;
-    margin-bottom: 5px;
 }
 
 .contact .container_mail{
