@@ -64,6 +64,54 @@ footer{
     border-bottom: 2px solid #333;
     padding-bottom: 1px;
 }
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 400px){
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul.menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar ul.menu li {
+        text-align: center;
+    }
+
+    .navbar ul.menu li a {
+        padding: .5rem 1rem;
+    }
+    
+    .navbar ul.menu.active{
+        display: flex;
+    }
+}
+
 .header .container_image{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

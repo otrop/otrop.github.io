@@ -9,3 +9,10 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-50px";
   }
 }
+
+const toggleButton = document.getElementsByClassName('toggle-botton')[0]
+const nacbarLinks = document.getElementsByClassName('menu')[0]
+
+toggleButton.addEventListener('click', () => {
+  nacbarLinks.classList.toggle('ative')
+})
